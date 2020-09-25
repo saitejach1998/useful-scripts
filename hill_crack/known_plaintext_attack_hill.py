@@ -6,10 +6,10 @@ import numpy as np
 
 #load ciphertext. load the known plaintext as ImmutableByteString; B('stuff')
 ciphertext = B('')
-known_plaintext = B('thequickb')
+known_plaintext = B('theq')
 dim = 2
 mod = 127 # depends on the charset; 26 - English Alphabet; 127 - Ascii
-known_ct = ciphertext[0:9]
+known_ct = ciphertext[0:4]
 
 
 P = np.array(list(known_plaintext)).reshape(dim,dim).T
